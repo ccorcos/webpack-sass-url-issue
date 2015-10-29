@@ -24,7 +24,7 @@ module.exports = {
     loaders: [
       { test: /\.js$/, loader: "babel", exclude: /(node_modules|bower_components)/ },
       { test: /\.coffee$/, loader: "babel!coffee" },
-      { test: /\.scss$/, loader: "style!css!sass?sourceMap" },
+      { test: /\.scss$/, loader: "style!css!sass" },
       { test: /\.(svg|png|jpe?g|ttf|woff2?|eot)$/, loader: 'url?limit=8182' }
     ]
   },
