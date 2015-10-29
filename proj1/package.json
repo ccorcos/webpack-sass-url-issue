@@ -10,6 +10,7 @@
     "express": "^4.13.3",
     "file-loader": "^0.8.4",
     "node-sass": "^3.3.3",
+    "omit-tilde-webpack-plugin": "^0.0.7",
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.0",
     "redbox-react": "^1.1.1",
