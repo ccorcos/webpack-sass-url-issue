@@ -4,10 +4,12 @@ https://github.com/bholloway/resolve-url-loader/issues/5
 
 Getting started.
 
+```
 git clone git@github.com:ccorcos/webpack-sass-url-issue.git
 cd webpack-sass-url-issue/proj1/
 npm install
 node server.js
+```
 
 You'll see an error like this:
 
