@@ -24,16 +24,18 @@ module.exports = {
     loaders: [
       { test: /\.js$/, loader: "babel", exclude: /(node_modules|bower_components)/ },
       { test: /\.coffee$/, loader: "babel!coffee" },
-      { test: /\.scss$/, loader: "style!css!resolve-url?absolute!sass?sourceMap" },
+      { test: /\.scss$/, loader: "style!css!sass" },
       { test: /\.(svg|png|jpe?g|ttf|woff2?|eot)$/, loader: 'url?limit=8182' }
     ]
   },
   resolve: {
-    root: [
-      path.resolve('..')
-    ],
     modulesDirectories: [
-      'node_modules'
+      'node_modules', path.resolve('..')
+    ]
+  },
+  resolveLoader: {
+    modulesDirectories: [
+      path.resolve('node_modules')
     ]
   }
 };
